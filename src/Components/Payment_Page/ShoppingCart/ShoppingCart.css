@@ -11,6 +11,9 @@ img {
   border-radius: 20px;
   width: 24%;
 }
+.box {
+  display: flex;
+}
 .img-text-box {
   display: flex;
 }
@@ -20,14 +23,14 @@ img {
 .text {
   padding: 2rem;
 }
-.text h6{
+.text h6 {
   text-decoration: underline;
   cursor: pointer;
 }
 .text h5 {
   font-weight: 400;
 }
-.text p{
+.text p {
   color: #a8aaa6;
 }
 .btn-group .btn-primary {
@@ -44,10 +47,68 @@ img {
   padding: 4rem 4rem 4rem 0;
   width: 60%;
 }
-.textarea .form-control{
-    border-radius: 50px;
-    padding: 1.5rem 2.5rem 2.5rem 2.5rem;
-    overflow:hidden;
-    resize:none;
-
+.textarea .form-control {
+  border-radius: 50px;
+  padding: 1.5rem 2.5rem 2.5rem 2.5rem;
+  overflow: hidden;
+  resize: none;
+}
+.increase-decrease-inputfield-dollar {
+  display: flex;
+  justify-content: space-between;
+}
+.increase-decrease-inputfield-dollar form {
+  border: 1px solid #a8aaa6;
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  border-radius: 50px;
+  height: 20%;
+}
+.increase-decrease-inputfield-dollar input {
+  width: 40%;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+.increase-decrease-inputfield-dollar button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 40px;
+  -webkit-appearance: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+.increase-decrease-inputfield-dollar .dollar .a {
+  text-decoration: underline;
+}
+.contact-shop {
+  text-decoration: underline;
+  color: #a8aaa6;
+  float: right;
+}
+.contact-shop:hover {
+  color: #999a97;
+  cursor: pointer;
+}
+.dollar {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.dollar s {
+  color: #7e7e7e;
+}
+.dollar p {
+  color: rgb(110, 219, 2);
+}
+.coupon-codes {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
 }

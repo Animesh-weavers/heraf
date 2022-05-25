@@ -2,4 +2,5 @@
   background-color: white;
   padding: 9rem;
   display: flex;
+  flex-direction: row;
 }
