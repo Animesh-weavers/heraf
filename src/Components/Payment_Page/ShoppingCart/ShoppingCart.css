@@ -43,11 +43,9 @@ img {
 .textarea {
   padding: 4rem 4rem 4rem 0;
   width: 60%;
-  /* border: black solid 1px; */
 }
 .textarea .form-control{
     border-radius: 50px;
-    /* height: 50%; */
     padding: 1.5rem 2.5rem 2.5rem 2.5rem;
     overflow:hidden;
     resize:none;
