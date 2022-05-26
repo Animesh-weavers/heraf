@@ -63,6 +63,52 @@ const PaymentGateway = () => {
             </div>
           </div>
         </div>
+        <div className="toal-money-container">
+          <div className="sub-money-container">
+            <div className="amount-details">
+              <p>Item(s) Total:</p>
+            </div>
+            <div className="amount">
+              <h5>US$ 37.00</h5>
+            </div>
+          </div>
+          <div className="sub-money-container">
+            <div className="amount-details">
+              <p>Shop Discount:</p>
+            </div>
+            <div className="amount">
+              <h5>-US$ 9.25</h5>
+            </div>
+          </div>
+          <hr />
+          <div className="sub-money-container">
+            <div className="amount-details">
+              <p>Subtotal:</p>
+            </div>
+            <div className="amount">
+              <h5>US$ 27.75</h5>
+            </div>
+          </div>
+          <div className="sub-money-container">
+            <div className="amount-details">
+              <p>
+                Delivery(To<sub>India</sub>):
+              </p>
+            </div>
+            <div className="amount">
+              <h5>US$ 200.00</h5>
+            </div>
+          </div>
+          <hr />
+          <div className="sub-money-container">
+            <div className="amount-details">
+              <p>Total (1 Item)</p>
+            </div>
+            <div className="amount">
+              <h5>US$ 275.75</h5>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

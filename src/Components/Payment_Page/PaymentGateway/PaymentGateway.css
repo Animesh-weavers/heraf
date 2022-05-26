@@ -40,3 +40,13 @@
 .payment .methods .container .row .col {
   /* border: 1px solid black; */
 }
+.toal-money-container {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+}
+.toal-money-container .sub-money-container {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+}
