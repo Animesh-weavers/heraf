@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./ShoppingCart.css";
+import { InputGroup, FormControl } from "react-bootstrap";
+import Paper from "../../../assets/paper.svg";
 
 const ShoppingCart = () => {
   const [quan, setQuan] = useState(1);
@@ -86,7 +88,34 @@ const ShoppingCart = () => {
           </div>
           <div className="coupon-codes">
             <h6>Apply shop coupon codes</h6>
-            
+            <InputGroup className="form-control">
+              <FormControl
+                type="text"
+                placeholder="Promo Code"
+                className="input"
+              />
+              <div className="search-icon">
+                <img src={Paper} alt="" />
+              </div>
+            </InputGroup>
+            <InputGroup className="form-control">
+              <select
+                className="form-select"
+                aria-label="Default select example"
+              >
+                <option value="selected">US $200.00 (04-15 Oct. Standard Delivery)</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </InputGroup>
+            <div className="para">
+              <p>
+                Estimated Delivery: <span className="date">04-21 Oct. </span>
+                <span className="country">from United States</span>
+              </p>
+            </div>
+            <h6>Heraf offsets carbon emissions from every delivery</h6>
           </div>
         </div>
       </div>

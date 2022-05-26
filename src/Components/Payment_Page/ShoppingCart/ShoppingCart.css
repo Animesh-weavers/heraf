@@ -53,6 +53,14 @@ img {
   overflow: hidden;
   resize: none;
 }
+.textarea .form-control:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: #a8aaa6;
+}
+.money-box {
+  padding-right: 1rem;
+}
 .increase-decrease-inputfield-dollar {
   display: flex;
   justify-content: space-between;
@@ -109,6 +117,46 @@ input::-webkit-inner-spin-button {
 .coupon-codes {
   /* border: 1px solid black; */
   display: flex;
+  flex-direction: column;
   justify-content: end;
   align-items: flex-end;
+}
+.coupon-codes .form-control {
+  border-radius: 50px;
+  margin: 1rem 0 1rem 1rem;
+}
+.coupon-codes .form-control .input {
+  border: none;
+  outline: none;
+  padding: 0rem;
+}
+.coupon-codes .form-control .input:focus {
+  box-shadow: none;
+  border: none;
+}
+.search-icon img {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  z-index: 9999;
+  width: 5%;
+  cursor: pointer;
+}
+.coupon-codes .para {
+  /* border: 1px solid black; */
+  width: 50%;
+  text-align: right;
+  color: #7e7e7e;
+}
+.coupon-codes .para .date{
+  text-decoration: underline;
+}
+.coupon-codes .form-control select{
+  border: none;
+  outline: none;
+  padding: 1rem;
+}
+.coupon-codes .form-control select:focus{
+  box-shadow: none;
+  border: none;
 }
