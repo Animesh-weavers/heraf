@@ -53,9 +53,10 @@ img {
 }
 .textarea .form-control {
   border-radius: 50px;
-  padding: 1.5rem 2.5rem 2.5rem 2.5rem;
+  padding: 1.5rem 2rem 2rem 2rem;
   overflow: hidden;
   resize: none;
+  width: 103%;
 }
 .textarea .form-control:focus {
   box-shadow: none;
