@@ -1,0 +1,42 @@
+.paymentGateway {
+  display: flex;
+  flex-direction: column;
+  width: 44%;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  /* border: 1px solid black; */
+}
+.delivery-status {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid black; */
+  justify-content: right;
+}
+.delivery-status hr {
+  width: 20%;
+}
+.delivery-status .status {
+  height: 29px;
+  width: 29px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+}
+.delivery-status .icon {
+  font-size: 120%;
+}
+.delivery-status .current-status {
+  background-color: #cadfb5;
+  color: white;
+}
+.payment .payment-title h4 {
+  color: #959595;
+  font-weight: 400;
+}
+.payment .methods .container .row {
+  margin-bottom: 1rem;
+}
+.payment .methods .container .row .col {
+  /* border: 1px solid black; */
+}
