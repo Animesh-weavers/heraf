@@ -2,7 +2,7 @@ import React from "react";
 import "./PaymentGateway.css";
 import { BiCartAlt } from "react-icons/bi";
 import { BsCreditCard2Back } from "react-icons/bs";
-import { AiFillCar } from "react-icons/ai";
+import { AiFillCar, AiOutlineArrowRight } from "react-icons/ai";
 import PaymentMethod from "./PaymentMethod";
 import Discover from "../../../assets/discover.svg";
 import Maestro from "../../../assets/Maestro.png";
@@ -66,7 +66,7 @@ const PaymentGateway = () => {
         <div className="toal-money-container">
           <div className="sub-money-container">
             <div className="amount-details">
-              <p>Item(s) Total:</p>
+              <h6>Item(s) Total:</h6>
             </div>
             <div className="amount">
               <h5>US$ 37.00</h5>
@@ -74,7 +74,7 @@ const PaymentGateway = () => {
           </div>
           <div className="sub-money-container">
             <div className="amount-details">
-              <p>Shop Discount:</p>
+              <h6>Shop Discount:</h6>
             </div>
             <div className="amount">
               <h5>-US$ 9.25</h5>
@@ -83,7 +83,7 @@ const PaymentGateway = () => {
           <hr />
           <div className="sub-money-container">
             <div className="amount-details">
-              <p>Subtotal:</p>
+              <h6>Subtotal:</h6>
             </div>
             <div className="amount">
               <h5>US$ 27.75</h5>
@@ -91,9 +91,9 @@ const PaymentGateway = () => {
           </div>
           <div className="sub-money-container">
             <div className="amount-details">
-              <p>
+              <h6>
                 Delivery(To<sub>India</sub>):
-              </p>
+              </h6>
             </div>
             <div className="amount">
               <h5>US$ 200.00</h5>
@@ -108,6 +108,19 @@ const PaymentGateway = () => {
               <h5>US$ 275.75</h5>
             </div>
           </div>
+        </div>
+        <div className="button-container">
+          <button type="button" className="btn btn-danger">
+            Proceed To Checkout <AiOutlineArrowRight />
+          </button>
+        </div>
+        <div className="additional">
+          <pre>
+            <p className="first">Local taxes included (where applicable)</p>
+            <p className="second">
+              *Additional duties and taxes <span>may apply</span>
+            </p>
+          </pre>
         </div>
       </div>
     </div>

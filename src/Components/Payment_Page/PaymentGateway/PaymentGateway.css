@@ -50,3 +50,23 @@
   display: flex;
   justify-content: space-between;
 }
+.toal-money-container .sub-money-container .amount-details > h6 {
+  color: #959595df;
+}
+.payment .button-container button {
+  width: 100%;
+  border-radius: 20px;
+}
+.payment .button-container button:focus{
+  box-shadow: none;
+  text-align: center;
+}
+.payment .additional{
+  text-align: center;
+}
+.payment .additional span{
+  text-decoration: underline;
+}
+.payment .additional .first{
+  margin-bottom: 0;
+}
