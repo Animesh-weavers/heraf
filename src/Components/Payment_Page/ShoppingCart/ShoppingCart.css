@@ -1,3 +1,6 @@
+/* .shoppingCart {
+  width: 50%;
+} */
 .title {
   font-weight: 400;
   font-size: 35px;
@@ -10,6 +13,7 @@
 img {
   border-radius: 20px;
   width: 24%;
+  height: 50%;
 }
 .box {
   display: flex;
@@ -148,15 +152,15 @@ input::-webkit-inner-spin-button {
   text-align: right;
   color: #7e7e7e;
 }
-.coupon-codes .para .date{
+.coupon-codes .para .date {
   text-decoration: underline;
 }
-.coupon-codes .form-control select{
+.coupon-codes .form-control select {
   border: none;
   outline: none;
   padding: 1rem;
 }
-.coupon-codes .form-control select:focus{
+.coupon-codes .form-control select:focus {
   box-shadow: none;
   border: none;
 }

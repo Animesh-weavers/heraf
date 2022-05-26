@@ -23,7 +23,7 @@ const ShoppingCart = () => {
   };
 
   return (
-    <div>
+    <div className="shoppingCart">
       <h1 className="title">
         Shopping Cart<sup>(1 item in your basket)</sup>
       </h1>
