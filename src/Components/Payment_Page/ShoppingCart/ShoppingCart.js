@@ -42,9 +42,11 @@ const ShoppingCart = () => {
               </h4>
               <h5>FINISH: STERLING SILVER</h5>
               <h5>LENGTH:18 INCHES</h5>
-              <h6>
-                <a>Edit</a>
-              </h6>
+
+              <Link to="" className="edit">
+                Edit
+              </Link>
+
               <p>Personalisation: Not requested on this term</p>
               <div className="button">
                 <div className="btn-group">
@@ -83,7 +85,9 @@ const ShoppingCart = () => {
               </button>
             </form>
             <div className="dollar">
-              <a className="contact-shop">Contact Shop</a>
+              <Link to="" className="contact-shop">
+                Contact Shop
+              </Link>
               <h2>US$13.95</h2>
               <p>
                 <s>US$ 37.00</s>
