@@ -1,17 +1,17 @@
 .payement-method {
-    border: 1px solid #a8aaa6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 79%;
-    border-radius: 22px;
-    height: 4rem;
-    align-content: center;
+  border: 1px solid #a8aaa6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110%;
+  border-radius: 22px;
+  height: 4rem;
+  align-content: center;
 }
-.payement-method img{
-    transform: scale(1.6);
+.payement-method img {
+  transform: scale(1.6);
 }
-.payement-method:hover{
-    border: 1px solid rgb(219, 195, 39);
-    cursor: pointer;
+.payement-method:hover {
+  border: 1px solid rgb(219, 195, 39);
+  cursor: pointer;
 }

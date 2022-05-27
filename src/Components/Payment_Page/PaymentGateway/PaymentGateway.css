@@ -1,3 +1,8 @@
+.payment {
+  box-shadow: 1px 3px 3px 1px rgb(13 13 13 / 16%);
+  border-radius: 20px;
+  padding: 1rem;
+}
 .paymentGateway {
   display: flex;
   flex-direction: column;
@@ -33,17 +38,20 @@
 .payment .payment-title h4 {
   color: #959595;
   font-weight: 400;
+  padding-left: 1rem;
+  font-size: 19px;
 }
 .payment .methods .container .row {
   margin-bottom: 1rem;
 }
-.payment .methods .container .row .col {
-  /* border: 1px solid black; */
-}
+/* .payment .methods .container .row .col {
+  border: 1px solid black;
+} */
 .toal-money-container {
   /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 }
 .toal-money-container .sub-money-container {
   /* border: 1px solid black; */
@@ -53,20 +61,47 @@
 .toal-money-container .sub-money-container .amount-details > h6 {
   color: #959595df;
 }
+.payment .button-container{
+padding: 0.5rem;
+}
 .payment .button-container button {
   width: 100%;
-  border-radius: 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ee4323;
+  padding: 0.6rem;
 }
-.payment .button-container button:focus{
+.payment .button-container button:focus {
   box-shadow: none;
   text-align: center;
+  background-color: #ee4323;
+  border: none;
+  padding: 0.6rem;
 }
-.payment .additional{
+.payment .button-container button:hover{
+  background-color: #ee4123e6;
+}
+.payment .additional {
   text-align: center;
 }
-.payment .additional span{
-  text-decoration: underline;
+.payment .additional span {
+  text-decoration: underline black;
+  color: black;
 }
-.payment .additional .first{
+.payment .additional .first {
   margin-bottom: 0;
 }
+.toal-money-container .sub-money-container .amount {
+  color: #818a7c;
+}
+.additional .first{
+  font-weight:500;
+  color: #7c7a7a;
+  font-size: 13px;
+}
+.additional .second{
+  font-size: 12.9px;
+}
+/* .col{
+  margin-right: 1.5rem;
+} */

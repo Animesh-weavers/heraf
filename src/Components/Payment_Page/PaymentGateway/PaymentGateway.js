@@ -10,6 +10,7 @@ import MasterCard from "../../../assets/payment3.svg";
 import Visa from "../../../assets/visa.svg";
 import Payment6 from "../../../assets/payment6.svg";
 import Paypal from "../../../assets/paypal-logo-preview.png";
+import { Link } from "react-router-dom";
 
 const PaymentGateway = () => {
   return (
@@ -104,7 +105,7 @@ const PaymentGateway = () => {
             <div className="amount-details">
               <p>Total (1 Item)</p>
             </div>
-            <div className="amount">
+            <div className="total-amount">
               <h5>US$ 275.75</h5>
             </div>
           </div>
@@ -118,7 +119,10 @@ const PaymentGateway = () => {
           <pre>
             <p className="first">Local taxes included (where applicable)</p>
             <p className="second">
-              *Additional duties and taxes <span>may apply</span>
+              *Additional duties and taxes{" "}
+              <Link to="">
+                <span>may apply</span>
+              </Link>
             </p>
           </pre>
         </div>
