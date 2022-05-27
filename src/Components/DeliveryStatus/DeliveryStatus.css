@@ -1,0 +1,25 @@
+.delivery-status {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid black; */
+  justify-content: right;
+}
+.delivery-status hr {
+  width: 20%;
+}
+.delivery-status .status {
+  height: 29px;
+  width: 29px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+}
+.delivery-status .icon {
+  font-size: 120%;
+}
+.delivery-status .current-status {
+  background-color: #cadfb5;
+  color: white;
+}

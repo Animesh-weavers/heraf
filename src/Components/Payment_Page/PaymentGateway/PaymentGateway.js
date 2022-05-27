@@ -11,27 +11,14 @@ import Visa from "../../../assets/visa.svg";
 import Payment6 from "../../../assets/payment6.svg";
 import Paypal from "../../../assets/paypal-logo-preview.png";
 import { Link } from "react-router-dom";
+import DeliveryStatus from "../../DeliveryStatus/DeliveryStatus";
 
 const PaymentGateway = () => {
   return (
     <div className="paymentGateway">
-      <div className="delivery-status">
-        <div className="status current-status">
-          <BiCartAlt className="icon" />
-        </div>
-        &nbsp;
-        <hr />
-        &nbsp;
-        <div className="status">
-          <AiFillCar className="icon" />
-        </div>
-        &nbsp;
-        <hr />
-        &nbsp;
-        <div className="status">
-          <BsCreditCard2Back className="icon" />
-        </div>
-      </div>
+      {/* <div className="delivery-status"> */}
+        <DeliveryStatus />
+      {/* </div> */}
       <div className="payment">
         <div className="payment-title">
           <h4>Payment Method</h4>
