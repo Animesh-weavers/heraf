@@ -10,10 +10,11 @@
   font-size: 19px;
   color: #a8aaa6;
 }
-img {
+.product-image {
   border-radius: 20px;
-  width: 24%;
+  width: 50%;
   height: 50%;
+  margin-top: 1rem;
 }
 .box {
   display: flex;
@@ -130,7 +131,7 @@ input::-webkit-inner-spin-button {
 .coupon-codes .form-control {
   border-radius: 50px;
   margin: 1rem 0 1rem 1rem;
-  width: 105%;
+  width: 112%;
 }
 .coupon-codes .form-control .input {
   border: none;
@@ -144,7 +145,7 @@ input::-webkit-inner-spin-button {
 .search-icon img {
   position: absolute;
   right: 40px;
-  top: 17px;
+  top: 26px;
   z-index: 9999;
   width: 5%;
   cursor: pointer;
@@ -157,6 +158,9 @@ input::-webkit-inner-spin-button {
 }
 .coupon-codes .para .date {
   text-decoration: underline;
+}
+.coupon-codes .para h6{
+  text-align: right;
 }
 .coupon-codes .form-control select {
   border: none;

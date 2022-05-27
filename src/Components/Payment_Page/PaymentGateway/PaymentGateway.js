@@ -41,25 +41,25 @@ const PaymentGateway = () => {
             {/*first row */}
             <div className="row">
               <div className="col">
-                <PaymentMethod img={Discover} width="100%" />
+                <PaymentMethod img={Discover} />
               </div>
               <div className="col">
-                <PaymentMethod img={Maestro} width="100%" />
+                <PaymentMethod img={Maestro} />
               </div>
               <div className="col">
-                <PaymentMethod img={MasterCard} width="100%" />
+                <PaymentMethod img={MasterCard} />
               </div>
             </div>
             {/*second row */}
             <div className="row">
               <div className="col">
-                <PaymentMethod img={Visa} width="100%" />
+                <PaymentMethod img={Visa} />
               </div>
               <div className="col">
-                <PaymentMethod img={Payment6} width="100%" />
+                <PaymentMethod img={Payment6} />
               </div>
               <div className="col">
-                <PaymentMethod img={Paypal} width="100%" />
+                <PaymentMethod img={Paypal} />
               </div>
             </div>
           </div>
