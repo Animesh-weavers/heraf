@@ -4,6 +4,7 @@ import { InputGroup, FormControl } from "react-bootstrap";
 import Paper from "../../../assets/paper.svg";
 import { Link } from "react-router-dom";
 import ProductImg from "../../../assets/img_big.jpg";
+import Title from "../../Title/Title";
 
 const ShoppingCart = () => {
   const [quan, setQuan] = useState(1);
@@ -26,9 +27,10 @@ const ShoppingCart = () => {
 
   return (
     <div className="shoppingCart">
-      <h1 className="title">
+      {/* <h1 className="title">
         Shopping Cart<sup>(1 item in your basket)</sup>
-      </h1>
+      </h1> */}
+      <Title title="Shopping Cart" sup="1 item in your basket" />
       <div className="box">
         <div className="details-box">
           <div className="img-text-box">

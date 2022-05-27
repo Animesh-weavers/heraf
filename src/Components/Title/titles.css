@@ -1,0 +1,9 @@
+.title {
+  font-weight: 400;
+  font-size: 35px;
+}
+.title sup {
+  font-weight: 300;
+  font-size: 19px;
+  color: #a8aaa6;
+}
