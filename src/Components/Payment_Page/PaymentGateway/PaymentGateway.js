@@ -99,7 +99,7 @@ const PaymentGateway = () => {
         </div>
         <div className="button-container">
           <button type="button" className="btn btn-danger">
-            Proceed To Checkout <AiOutlineArrowRight />
+            Proceed To Checkout <AiOutlineArrowRight style={{fontSize:'25px'}} />
           </button>
         </div>
         <div className="additional">
