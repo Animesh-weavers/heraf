@@ -1,0 +1,12 @@
+.main-modal-container{
+    display: flex;
+    flex-direction: column;
+}
+.main-modal-container .modal-head{
+    text-align: right;
+    cursor: pointer;
+    padding: 1rem;
+}
+.main-modal{
+    width: 50rem;
+}
