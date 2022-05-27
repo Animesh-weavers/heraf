@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./ShoppingCart.css";
 import { InputGroup, FormControl } from "react-bootstrap";
 import Paper from "../../../assets/paper.svg";
+import { Link } from "react-router-dom";
 
 const ShoppingCart = () => {
   const [quan, setQuan] = useState(1);
@@ -47,8 +48,12 @@ const ShoppingCart = () => {
               <p>Personalisation: Not requested on this term</p>
               <div className="button">
                 <div className="btn-group">
-                  <a className="btn btn-primary button">Save for Later</a>
-                  <a className="btn btn-primary button">Remove</a>
+                  <Link to="" className="btn btn-primary button">
+                    Save for Later
+                  </Link>
+                  <Link to="" className="btn btn-primary button">
+                    Remove
+                  </Link>
                 </div>
               </div>
             </div>
@@ -103,7 +108,9 @@ const ShoppingCart = () => {
                 className="form-select"
                 aria-label="Default select example"
               >
-                <option value="selected">US $200.00 (04-15 Oct. Standard Delivery)</option>
+                <option value="selected">
+                  US $200.00 (04-15 Oct. Standard Delivery)
+                </option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>

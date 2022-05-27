@@ -166,3 +166,14 @@ input::-webkit-inner-spin-button {
   box-shadow: none;
   border: none;
 }
+.btn-group .btn-primary:focus{
+  background-color: white;
+  border: none;
+  outline: none;
+  color: black;
+  box-shadow: none;
+}
+.btn-group .btn-primary{
+  border: none;
+  box-shadow: none !important;
+}
