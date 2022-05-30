@@ -5,7 +5,7 @@ import "./SelectCountryWithFlag.css";
 
 const SelectCountryWithFlag = (props) => {
   //static json data
-  const [data, setData] = useState([
+  const [data] = useState([
     {
       id: 0,
       value: "USA",
@@ -47,9 +47,8 @@ const SelectCountryWithFlag = (props) => {
       ),
     },
   ]);
-
   const handleChange = (e) => {
-    console.log(e);
+    props.selectCountryHandler(e.country);
   };
   return (
     <>

@@ -1,10 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 import { Modal, CloseButton, Form, FormControl } from "react-bootstrap";
 import Title from "../Title/Title";
 import "./Modal.css";
 import SelectCountryWithFlag from "./SelectCountryWithFlag";
 
 const NewAddressModal = (props) => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [address, setAddress] = useState("");
+  const [city, setCity] = useState("");
+  const [zipCode, setZipCode] = useState("");
+  const [contactNo, setContactNo] = useState("");
+  const [email, setEmail] = useState("");
+  const [country, setCountry] = useState("");
+
+  const selectCountryHandler = (country) => {
+    setCountry(country);
+  };
+
+  const cancelButtonHandler = () => {
+    props.onHide();
+    setFirstName("");
+    setLastName("");
+    setAddress("");
+    setCity("");
+    setZipCode("");
+    setContactNo("");
+    setEmail("");
+    setCountry("");
+  };
+
+  const deliveryDetailsSubmitHandler = (e) => {
+    e.preventDefault();
+    props.onHide();
+    const tmpDlDetails = {
+      firstName,
+      lastName,
+      address,
+      city,
+      zipCode,
+      contactNo,
+      email,
+      country,
+    };
+    setFirstName("");
+    setLastName("");
+    setAddress("");
+    setCity("");
+    setZipCode("");
+    setContactNo("");
+    setEmail("");
+    setCountry("");
+    console.log(tmpDlDetails);
+  };
+
   return (
     <>
       <Modal
@@ -15,7 +64,10 @@ const NewAddressModal = (props) => {
       >
         <div className="main-modal-container">
           <div className="modal-head">
-            <CloseButton onClick={props.onHide} className="cancel-icon" />
+            <CloseButton
+              onClick={cancelButtonHandler}
+              className="cancel-icon"
+            />
           </div>
           <div className="modal-title">
             <Title
@@ -24,7 +76,7 @@ const NewAddressModal = (props) => {
             />
           </div>
           <div className="form-container">
-            <Form className="container">
+            <Form className="container" onSubmit={deliveryDetailsSubmitHandler}>
               <div className="row">
                 <div className="col">
                   <Form.Label className="labels">First Name *</Form.Label>
@@ -34,6 +86,8 @@ const NewAddressModal = (props) => {
                     aria-describedby="basic-addon1"
                     className="controls"
                     required
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
                   />
                 </div>
                 <div className="col">
@@ -44,6 +98,8 @@ const NewAddressModal = (props) => {
                     aria-describedby="basic-addon1"
                     className="controls"
                     required
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
                   />
                 </div>
               </div>
@@ -56,6 +112,8 @@ const NewAddressModal = (props) => {
                     aria-describedby="basic-addon1"
                     className="controls"
                     required
+                    value={address}
+                    onChange={(e) => setAddress(e.target.value)}
                   />
                 </div>
                 <div className="col">
@@ -66,6 +124,8 @@ const NewAddressModal = (props) => {
                     aria-describedby="basic-addon1"
                     className="controls"
                     required
+                    value={city}
+                    onChange={(e) => setCity(e.target.value)}
                   />
                 </div>
               </div>
@@ -78,6 +138,8 @@ const NewAddressModal = (props) => {
                     type="number"
                     className="controls"
                     required
+                    value={zipCode}
+                    onChange={(e) => setZipCode(e.target.value)}
                   />
                 </div>
                 <div className="col">
@@ -88,12 +150,18 @@ const NewAddressModal = (props) => {
                     type="number"
                     className="controls"
                     required
+                    value={contactNo}
+                    onChange={(e) => setContactNo(e.target.value)}
                   />
                 </div>
               </div>
               <div className="row">
                 <div className="col">
-                  <SelectCountryWithFlag labels="labels" controls="controls" />
+                  <SelectCountryWithFlag
+                    labels="labels"
+                    controls="controls"
+                    selectCountryHandler={selectCountryHandler}
+                  />
                 </div>
                 <div className="col">
                   <Form.Label className="labels">E-mail ID *</Form.Label>
@@ -102,11 +170,17 @@ const NewAddressModal = (props) => {
                     placeholder="gleen_cross@heraf.com"
                     className="controls"
                     required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
               </div>
               <div className="form-button-container">
-                <button type="button" className="btn btn-secondary cancel-button">
+                <button
+                  type="button"
+                  className="btn btn-secondary cancel-button"
+                  onClick={cancelButtonHandler}
+                >
                   cancel
                 </button>
 

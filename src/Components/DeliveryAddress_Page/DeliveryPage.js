@@ -4,7 +4,6 @@ import "./DeliveryPage.css";
 import Title from "../Title/Title";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import NewAddressModal from "../Modal/NewAddressModal";
-// import MyVerticallyCenteredModal from "../Modal/MyVerticallyCenteredModal";
 
 const DeliveryPage = () => {
   const [isShowModal, setIsShowModal] = useState(false);
@@ -17,10 +16,6 @@ const DeliveryPage = () => {
   };
   return (
     <>
-      {/* <MyVerticallyCenteredModal
-        show={isShowModal}
-        onHide={() => setIsShowModal(false)}
-      /> */}
       <NewAddressModal show={isShowModal} onHide={modalCloseHandler} />
       <div className="deliveryContainer">
         <div className="delivery-header-container">
