@@ -1,9 +1,9 @@
 .title {
   font-weight: 400;
-  font-size: 35px;
+  font-size: 32px;
 }
-.title sup {
+.title .sup {
   font-weight: 300;
-  font-size: 19px;
+  font-size: 15px;
   color: #a8aaa6;
 }

@@ -4,7 +4,7 @@ import "./titles.css";
 const Title = (props) => {
   return (
     <h1 className="title">
-      {props.title}<sup>({props.sup})</sup>
+      {props.title}<sup className="sup">({props.sup})</sup>
     </h1>
   );
 };

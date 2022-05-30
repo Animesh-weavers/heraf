@@ -106,16 +106,13 @@ const NewAddressModal = (props) => {
                 </div>
               </div>
               <div className="form-button-container">
-                <div className="cancel-modal-button">
-                  <button type="button" className="btn btn-secondary">
-                    cancel
-                  </button>
-                </div>
-                <div className="save-modal-button">
-                  <button type="submit" className="btn btn-secondary ">
-                    Save
-                  </button>
-                </div>
+                <button type="button" className="btn btn-secondary cancel-button">
+                  cancel
+                </button>
+
+                <button type="submit" className="btn btn-secondary save-button">
+                  Save
+                </button>
               </div>
             </Form>
           </div>

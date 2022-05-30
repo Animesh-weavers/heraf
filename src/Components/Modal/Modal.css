@@ -11,12 +11,11 @@
 }
 .main-modal-container .modal-head {
   text-align: right;
-
 }
-.main-modal-container .modal-head .cancel-icon{
+.main-modal-container .modal-head .cancel-icon {
   cursor: pointer;
 }
-.main-modal-container .modal-head .cancel-icon:focus{
+.main-modal-container .modal-head .cancel-icon:focus {
   box-shadow: none;
 }
 .main-modal-container .modal-title {
@@ -26,22 +25,26 @@
   padding: 0rem 0rem 2rem 1.5rem;
 }
 .form-container .container .form-button-container {
-  border: 1px solid black;
   display: flex;
+  margin-top: 3rem;
 }
-.form-container .container .form-button-container .cancel-modal-button {
-  /* border: 1px solid rgb(213, 0, 0); */
-  width: 47%;
-}
-.form-container .container .form-button-container .save-modal-button {
-  /* border: 1px solid rgb(89, 255, 0); */
-  width: 53%;
-}
-
-.form-container .container .form-button-container .save-modal-button button {
+.form-container .container .form-button-container .save-button {
   background-color: #ee4323;
   border: none;
   outline: none;
+  width: 22%;
+  padding: 0.5rem;
+  border-radius: 25px;
+}
+.form-container .container .form-button-container .cancel-button {
+  margin-right: 16rem;
+  background-color: transparent;
+  color: black;
+  border: none;
+  outline: none;
+}
+.form-container .container .form-button-container .cancel-button:focus{
+  box-shadow: none;
 }
 .form-container
   .container
@@ -61,10 +64,10 @@
   border: 1px solid #eaeaea;
   padding-left: 28px;
 }
-.form-container .container .controls:focus{
+.form-container .container .controls:focus {
   box-shadow: none;
 }
-.form-container .container .row .col .labels{
-    margin-left: 0.5rem;
-    color: #798273;
+.form-container .container .row .col .labels {
+  margin-left: 0.5rem;
+  color: #798273;
 }
