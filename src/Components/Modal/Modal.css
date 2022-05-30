@@ -1,12 +1,70 @@
-.main-modal-container{
-    display: flex;
-    flex-direction: column;
+.custom-dialog {
+  min-width: 52%;
+  border: none;
+  outline: none;
+  border-color: transparent;
 }
-.main-modal-container .modal-head{
-    text-align: right;
-    cursor: pointer;
-    padding: 1rem;
+.main-modal-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
 }
-.main-modal{
-    width: 50rem;
+.main-modal-container .modal-head {
+  text-align: right;
+
+}
+.main-modal-container .modal-head .cancel-icon{
+  cursor: pointer;
+}
+.main-modal-container .modal-head .cancel-icon:focus{
+  box-shadow: none;
+}
+.main-modal-container .modal-title {
+  padding: 2rem;
+}
+.main-modal-container .form-container {
+  padding: 0rem 0rem 2rem 1.5rem;
+}
+.form-container .container .form-button-container {
+  border: 1px solid black;
+  display: flex;
+}
+.form-container .container .form-button-container .cancel-modal-button {
+  /* border: 1px solid rgb(213, 0, 0); */
+  width: 47%;
+}
+.form-container .container .form-button-container .save-modal-button {
+  /* border: 1px solid rgb(89, 255, 0); */
+  width: 53%;
+}
+
+.form-container .container .form-button-container .save-modal-button button {
+  background-color: #ee4323;
+  border: none;
+  outline: none;
+}
+.form-container
+  .container
+  .form-button-container
+  .save-modal-button
+  button:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+.form-container .container .controls {
+  height: 61px;
+  width: 100%;
+  border-radius: 35px;
+  margin-bottom: 20px;
+  border: 1px solid #eaeaea;
+  padding-left: 28px;
+}
+.form-container .container .controls:focus{
+  box-shadow: none;
+}
+.form-container .container .row .col .labels{
+    margin-left: 0.5rem;
+    color: #798273;
 }

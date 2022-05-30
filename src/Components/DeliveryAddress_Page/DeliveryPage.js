@@ -3,7 +3,8 @@ import DeliveryStatus from "../DeliveryStatus/DeliveryStatus";
 import "./DeliveryPage.css";
 import Title from "../Title/Title";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import MyVerticallyCenteredModal from "../Modal/MyVerticallyCenteredModal";
+import NewAddressModal from "../Modal/NewAddressModal";
+// import MyVerticallyCenteredModal from "../Modal/MyVerticallyCenteredModal";
 
 const DeliveryPage = () => {
   const [isShowModal, setIsShowModal] = useState(false);
@@ -11,12 +12,16 @@ const DeliveryPage = () => {
   const modalShowHandler = () => {
     setIsShowModal(true);
   };
+  const modalCloseHandler = () => {
+    setIsShowModal(false);
+  };
   return (
     <>
-      <MyVerticallyCenteredModal
+      {/* <MyVerticallyCenteredModal
         show={isShowModal}
         onHide={() => setIsShowModal(false)}
-      />
+      /> */}
+      <NewAddressModal show={isShowModal} onHide={modalCloseHandler} />
       <div className="deliveryContainer">
         <div className="delivery-header-container">
           <div className="deliveryTitle">
