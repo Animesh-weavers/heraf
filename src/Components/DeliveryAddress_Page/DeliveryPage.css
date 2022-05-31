@@ -85,11 +85,7 @@
   color: #777776;
   font-weight: 400;
 }
-.staticContainer
-  .dispatch
-  .dispatch-button-container
-  .dispatch-button
-  button {
+.staticContainer .dispatch .dispatch-button-container .dispatch-button button {
   font-size: 32px;
   background-color: #ee4323;
   border-radius: 50%;
@@ -99,23 +95,23 @@
   width: 110%;
   height: 110%;
 }
-.staticContainer .dispatch .edit-delete-button-container{
+.staticContainer .dispatch .edit-delete-button-container {
   padding: 3rem 1rem 1rem 0rem;
 }
-.staticContainer .dispatch .edit-delete-button-container .btn{
+.staticContainer .dispatch .edit-delete-button-container .btn {
   background-color: white;
   border: none;
   outline: none;
 }
-.staticContainer .dispatch .edit-delete-button-container .btn:focus{
+.staticContainer .dispatch .edit-delete-button-container .btn:focus {
   border: none;
   outline: none;
   box-shadow: none;
 }
-.staticContainer .dispatch .edit-delete-button-container .edit{
+.staticContainer .dispatch .edit-delete-button-container .edit {
   color: black;
   margin-right: 3.5rem;
 }
-.staticContainer .dispatch .edit-delete-button-container .delete{
+.staticContainer .dispatch .edit-delete-button-container .delete {
   color: #a8aaa6;
 }
