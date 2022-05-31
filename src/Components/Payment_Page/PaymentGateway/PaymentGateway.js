@@ -1,8 +1,6 @@
 import React from "react";
 import "./PaymentGateway.css";
-import { BiCartAlt } from "react-icons/bi";
-import { BsCreditCard2Back } from "react-icons/bs";
-import { AiFillCar, AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineArrowRight } from "react-icons/ai";
 import PaymentMethod from "./PaymentMethod";
 import Discover from "../../../assets/discover.svg";
 import Maestro from "../../../assets/Maestro.png";
@@ -17,7 +15,7 @@ const PaymentGateway = () => {
   return (
     <div className="paymentGateway">
       {/* <div className="delivery-status"> */}
-        <DeliveryStatus />
+      <DeliveryStatus />
       {/* </div> */}
       <div className="payment">
         <div className="payment-title">
@@ -99,7 +97,8 @@ const PaymentGateway = () => {
         </div>
         <div className="button-container">
           <button type="button" className="btn btn-danger">
-            Proceed To Checkout <AiOutlineArrowRight style={{fontSize:'25px'}} />
+            Proceed To Checkout{" "}
+            <AiOutlineArrowRight style={{ fontSize: "25px" }} />
           </button>
         </div>
         <div className="additional">

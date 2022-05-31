@@ -2,7 +2,7 @@ import React from "react";
 import "./DeliveryStatus.css";
 import { BiCartAlt } from "react-icons/bi";
 import { BsCreditCard2Back } from "react-icons/bs";
-import { AiFillCar, AiOutlineArrowRight } from "react-icons/ai";
+import { AiFillCar } from "react-icons/ai";
 
 const DeliveryStatus = () => {
   return (
