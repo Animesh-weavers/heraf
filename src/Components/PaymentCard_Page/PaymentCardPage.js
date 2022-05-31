@@ -4,6 +4,10 @@ import Title from "../Title/Title";
 import DeliveryStatus from "../DeliveryStatus/DeliveryStatus";
 import { HiLockClosed } from "react-icons/hi";
 import { BsArrowRight } from "react-icons/bs";
+import PaymentMethod from "../Payment_Page/PaymentGateway/PaymentMethod";
+import MasterCard from "../../assets/payment3.svg";
+import VisaCard from "../../assets/visa.svg";
+
 const PaymentCard_Page = () => {
   return (
     <>
@@ -32,7 +36,7 @@ const PaymentCard_Page = () => {
                   />
                   &nbsp; &nbsp;
                   <label
-                    className="form-check-label"
+                    className="form-check-label label"
                     htmlFor="flexRadioDefault1"
                   >
                     For your security, please re-enter your card number.
@@ -71,6 +75,86 @@ const PaymentCard_Page = () => {
                   </div>
                 </form>
               </div>
+              <hr />
+            </div>
+            {/*second */}
+            <div className="select-payment-card-option">
+              <div className="radio-payment-container">
+                <div className="form-check">
+                  <input
+                    className="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                  />
+                  &nbsp; &nbsp;
+                  <label
+                    className="form-check-label card-label"
+                    htmlFor="flexRadioDefault2"
+                  >
+                    <div className="card">
+                      <PaymentMethod img={MasterCard} />
+                    </div>
+                    <div className="card-details">
+                      <h6>Master Card ... 7161</h6>
+                      <h6>Exp: 10/2021</h6>
+                      <h6>Glenn Cross</h6>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div className="inputfield-payment-container"></div>
+              <hr className="hr-element" />
+            </div>
+            {/*3rd */}
+            <div className="select-payment-card-option">
+              <div className="radio-payment-container">
+                <div className="form-check">
+                  <input
+                    className="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault3"
+                  />
+                  &nbsp; &nbsp;
+                  <label
+                    className="form-check-label card-label"
+                    htmlFor="flexRadioDefault3"
+                  >
+                    <div className="card">
+                      <PaymentMethod img={VisaCard} />
+                    </div>
+                    <div className="card-details">
+                      <h6>Visa Card ... 7161</h6>
+                      <h6>Exp: 10/2021</h6>
+                      <h6>Glenn Cross</h6>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div className="inputfield-payment-container"></div>
+              <hr className="hr-element" />
+            </div>
+            {/*4th */}
+            <div className="select-payment-card-option">
+              <div className="radio-payment-container">
+                <div className="form-check">
+                  <input
+                    className="form-check-input add-new-card-radio"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault4"
+                  />
+                  &nbsp; &nbsp;
+                  <label
+                    className="form-check-label add-new-card"
+                    htmlFor="flexRadioDefault4"
+                  >
+                    <h6>Add a new card</h6>
+                  </label>
+                </div>
+              </div>
+              <div className="inputfield-payment-container"></div>
               <hr className="hr-element" />
             </div>
           </div>
