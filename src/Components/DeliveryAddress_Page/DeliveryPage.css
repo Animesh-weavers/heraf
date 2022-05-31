@@ -1,46 +1,46 @@
-.deliveryContainer {
+.staticContainer {
   display: flex;
   flex-direction: column;
   padding: 7rem;
 }
-.delivery-header-container {
+.static-header-container {
   padding: 3rem;
   display: flex;
   justify-content: space-between;
 }
-.deliveryContainer .delivery-header-container .deliveryTitle {
+.staticContainer .static-header-container .static-Title {
   float: left;
 }
-.deliveryContainer .delivery-header-container .status-delivery {
+.staticContainer .static-header-container .static-status-delivery {
   width: 30%;
 }
-.deliveryContainer .delivery-address-container {
+.staticContainer .delivery-address-container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-.deliveryContainer
+.staticContainer
   .delivery-address-container
   .default-address
   .address-title
   h5 {
   color: #a8aaa6;
 }
-.deliveryContainer
+.staticContainer
   .delivery-address-container
   .default-address
   .address
   .country {
   margin-bottom: 0rem;
 }
-.deliveryContainer .delivery-address-container .default-address .address h6 {
+.staticContainer .delivery-address-container .default-address .address h6 {
   font-weight: 500;
   font-size: 15px;
 }
-.deliveryContainer .delivery-address-container .default-address .address {
+.staticContainer .delivery-address-container .default-address .address {
   padding: 1rem 1rem 1rem 0rem;
 }
-.deliveryContainer
+.staticContainer
   .delivery-address-container
   .default-address
   .new-address-btn-container
@@ -54,14 +54,14 @@
   border-color: #a8aaa6;
 }
 
-.deliveryContainer
+.staticContainer
   .delivery-address-container
   .default-address
   .new-address-btn-container
   button:focus {
   box-shadow: none;
 }
-.deliveryContainer
+.staticContainer
   .delivery-address-container
   .default-address
   .new-address-btn-container
@@ -69,23 +69,23 @@
   background-color: whitesmoke;
 }
 /*dispatch*/
-.deliveryContainer .dispatch {
+.staticContainer .dispatch {
   display: flex;
   flex-direction: column;
 }
 
-.deliveryContainer .dispatch .dispatch-button-container {
+.staticContainer .dispatch .dispatch-button-container {
   display: flex;
   flex-direction: row;
 }
-.deliveryContainer .dispatch .dispatch-button-container .h4 {
+.staticContainer .dispatch .dispatch-button-container .h4 {
   margin-top: 1rem;
 }
-.deliveryContainer .dispatch .dispatch-button-container .h4 h5 {
+.staticContainer .dispatch .dispatch-button-container .h4 h5 {
   color: #777776;
   font-weight: 400;
 }
-.deliveryContainer
+.staticContainer
   .dispatch
   .dispatch-button-container
   .dispatch-button
@@ -99,23 +99,23 @@
   width: 110%;
   height: 110%;
 }
-.deliveryContainer .dispatch .edit-delete-button-container{
+.staticContainer .dispatch .edit-delete-button-container{
   padding: 3rem 1rem 1rem 0rem;
 }
-.deliveryContainer .dispatch .edit-delete-button-container .btn{
+.staticContainer .dispatch .edit-delete-button-container .btn{
   background-color: white;
   border: none;
   outline: none;
 }
-.deliveryContainer .dispatch .edit-delete-button-container .btn:focus{
+.staticContainer .dispatch .edit-delete-button-container .btn:focus{
   border: none;
   outline: none;
   box-shadow: none;
 }
-.deliveryContainer .dispatch .edit-delete-button-container .edit{
+.staticContainer .dispatch .edit-delete-button-container .edit{
   color: black;
   margin-right: 3.5rem;
 }
-.deliveryContainer .dispatch .edit-delete-button-container .delete{
+.staticContainer .dispatch .edit-delete-button-container .delete{
   color: #a8aaa6;
 }

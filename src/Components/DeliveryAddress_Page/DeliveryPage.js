@@ -17,15 +17,15 @@ const DeliveryPage = () => {
   return (
     <>
       <NewAddressModal show={isShowModal} onHide={modalCloseHandler} />
-      <div className="deliveryContainer">
-        <div className="delivery-header-container">
-          <div className="deliveryTitle">
+      <div className="staticContainer">
+        <div className="static-header-container">
+          <div className="static-Title">
             <Title
               title="Choose a Delivery Address"
               sup="Address Data & Types of Delivery"
             />
           </div>
-          <div className="status-delivery">
+          <div className="static-status-delivery">
             <DeliveryStatus />
           </div>
         </div>
