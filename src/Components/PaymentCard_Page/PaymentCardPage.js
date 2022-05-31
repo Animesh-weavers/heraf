@@ -47,7 +47,7 @@ const PaymentCard_Page = () => {
                     </label>
                     <div className="input-group mb-3">
                       <input
-                        type="text"
+                        type="number"
                         className="form-control"
                         aria-label="Amount (to the nearest dollar)"
                       />
