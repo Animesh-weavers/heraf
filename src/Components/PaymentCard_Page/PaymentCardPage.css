@@ -1,0 +1,177 @@
+.payment-card-container .select-payment-card-container {
+  /* border: 1px solid black; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option {
+  /* border: 1px solid black; */
+  padding: 1rem;
+}
+.payment-card-container .select-payment-card-container input[type="radio"] {
+  width: 22px;
+  height: 22px;
+  margin-top: 1rem;
+}
+.payment-card-container
+  .select-payment-card-container
+  input[type="radio"]:checked {
+  background-color: rgb(107, 107, 107);
+  box-shadow: none;
+  border-color: rgb(107, 107, 107);
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option
+  .radio-payment-container
+  .form-check
+  label {
+  background-color: #e7dfcf;
+  padding: 1rem 20rem 1rem 2rem;
+  border-radius: 33px;
+  font-weight: bold;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option
+  .inputfield-payment-container
+  form {
+  /* border: 1px solid black; */
+  display: flex;
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option
+  .inputfield-payment-container
+  form
+  input {
+  width: 19rem;
+  border-radius: 8px;
+  border-right: hidden;
+  height: 3rem;
+  border-color: #8d9296;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option
+  .inputfield-payment-container
+  form
+  input:focus {
+  box-shadow: none;
+}
+
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option
+  .inputfield-payment-container
+  form
+  .input-group-text {
+  background-color: transparent;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-size: 20px;
+  border-color: #8d9296;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option
+  .inputfield-payment-container
+  form label{
+      color: #8d9296;
+      font-size: 15px;
+  }
+
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option
+  .inputfield-payment-container
+  form
+  .payment-button-container {
+  /* border: 1px solid black; */
+  display: flex;
+  padding-top: 1.8rem;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option
+  .inputfield-payment-container
+  form
+  .payment-button-container
+  button {
+  margin: 0px 12px 0px 12px;
+}
+
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option
+  .inputfield-payment-container
+  form
+  .payment-button-container
+  .confirm-btn
+  button {
+  width: 9.5rem;
+  height: 3rem;
+  border-radius: 30px;
+  background-color: #ee4323;
+  font-weight: bold;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option
+  .inputfield-payment-container
+  form
+  .payment-button-container
+  .confirm-btn
+  button:hover {
+  border-color: #ee4323;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option
+  .inputfield-payment-container
+  form
+  .payment-button-container
+  .confirm-btn
+  button:focus {
+  box-shadow: none;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option
+  .inputfield-payment-container
+  form
+  .payment-button-container
+  .delete-btn
+  button {
+  width: 9rem;
+  height: 3rem;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #8d9296;
+  border-color: #ced4da;
+  font-weight: bold;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option
+  .inputfield-payment-container
+  form
+  .payment-button-container
+  .delete-btn
+  button:focus {
+  box-shadow: none;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option
+  .inputfield-payment-container
+  form
+  .payment-button-container
+  .confirm-btn
+  .arrow-icon-confirm-button {
+  font-size: 20px;
+}
