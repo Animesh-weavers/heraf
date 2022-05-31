@@ -1,5 +1,5 @@
 import React from "react";
-import "./PaymentCard_Page.css";
+import "./PaymentCardPage.css";
 import Title from "../Title/Title";
 import DeliveryStatus from "../DeliveryStatus/DeliveryStatus";
 
