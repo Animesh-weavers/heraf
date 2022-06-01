@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./PaymentCardPage.css";
 import Title from "../Title/Title";
 import DeliveryStatus from "../DeliveryStatus/DeliveryStatus";
@@ -7,8 +7,36 @@ import { BsArrowRight } from "react-icons/bs";
 import PaymentMethod from "../Payment_Page/PaymentGateway/PaymentMethod";
 import MasterCard from "../../assets/payment3.svg";
 import VisaCard from "../../assets/visa.svg";
+import { InputGroup, FormControl, Form } from "react-bootstrap";
 
 const PaymentCard_Page = () => {
+  const [isShowForm, setIsShowForm] = useState(true);
+  const [isShowNewCardForm, setIsSHowNewCardForm] = useState(false);
+  const radioButtonHandler = (e) => {
+    console.log(e.target.value);
+    switch (e.target.value) {
+      case "add-new-card":
+        setIsSHowNewCardForm(true);
+        setIsShowForm(false);
+        break;
+      case "master-card":
+        setIsSHowNewCardForm(false);
+        setIsShowForm(false);
+        break;
+      case "re-enter-card-number":
+        setIsSHowNewCardForm(false);
+        setIsShowForm(true);
+        break;
+      case "visa-card":
+        setIsSHowNewCardForm(false);
+        setIsShowForm(false);
+        break;
+      default:
+        console.log("error from Switch Case");
+        break;
+    }
+  };
+
   return (
     <>
       <div className="staticContainer">
@@ -33,6 +61,9 @@ const PaymentCard_Page = () => {
                     type="radio"
                     name="flexRadioDefault"
                     id="flexRadioDefault1"
+                    value="re-enter-card-number"
+                    defaultChecked
+                    onChange={radioButtonHandler}
                   />
                   &nbsp; &nbsp;
                   <label
@@ -43,38 +74,41 @@ const PaymentCard_Page = () => {
                   </label>
                 </div>
               </div>
-              <div className="inputfield-payment-container">
-                <form>
-                  <div className="input-field">
-                    <label htmlFor="basic-url" className="form-label">
-                      Visa ... 3446
-                    </label>
-                    <div className="input-group mb-3">
-                      <input
-                        type="number"
-                        className="form-control"
-                        aria-label="Amount (to the nearest dollar)"
-                      />
-                      <span className="input-group-text">
-                        <HiLockClosed />
-                      </span>
+
+              {isShowForm && (
+                <div className="inputfield-payment-container">
+                  <form>
+                    <div className="input-field">
+                      <label htmlFor="basic-url" className="form-label">
+                        Visa ... 3446
+                      </label>
+                      <div className="input-group mb-3">
+                        <input
+                          type="number"
+                          className="form-control"
+                          aria-label="Amount (to the nearest dollar)"
+                        />
+                        <span className="input-group-text">
+                          <HiLockClosed />
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                  <div className="payment-button-container">
-                    <div className="confirm-btn">
-                      <button type="submit" className="btn btn-danger">
-                        Confirm &nbsp;&nbsp;
-                        <BsArrowRight className="arrow-icon-confirm-button" />
-                      </button>
+                    <div className="payment-button-container">
+                      <div className="confirm-btn">
+                        <button type="submit" className="btn btn-danger">
+                          Confirm &nbsp;&nbsp;
+                          <BsArrowRight className="arrow-icon-confirm-button" />
+                        </button>
+                      </div>
+                      <div className="delete-btn">
+                        <button type="button" className="btn btn-danger">
+                          Delete
+                        </button>
+                      </div>
                     </div>
-                    <div className="delete-btn">
-                      <button type="button" className="btn btn-danger">
-                        Delete
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
+                  </form>
+                </div>
+              )}
               <hr />
             </div>
             {/*second */}
@@ -86,6 +120,8 @@ const PaymentCard_Page = () => {
                     type="radio"
                     name="flexRadioDefault"
                     id="flexRadioDefault2"
+                    value="master-card"
+                    onChange={radioButtonHandler}
                   />
                   &nbsp; &nbsp;
                   <label
@@ -115,6 +151,8 @@ const PaymentCard_Page = () => {
                     type="radio"
                     name="flexRadioDefault"
                     id="flexRadioDefault3"
+                    value="visa-card"
+                    onChange={radioButtonHandler}
                   />
                   &nbsp; &nbsp;
                   <label
@@ -144,6 +182,8 @@ const PaymentCard_Page = () => {
                     type="radio"
                     name="flexRadioDefault"
                     id="flexRadioDefault4"
+                    value="add-new-card"
+                    onChange={radioButtonHandler}
                   />
                   &nbsp; &nbsp;
                   <label
@@ -154,7 +194,77 @@ const PaymentCard_Page = () => {
                   </label>
                 </div>
               </div>
-              <div className="inputfield-payment-container"></div>
+              {isShowNewCardForm && (
+                <div className="inputfield-payment-container">
+                  <div className="add-another-card-details">
+                    <div className="container">
+                      <div className="row">
+                        <div className="col">
+                          <Form.Group
+                            className="mb-3"
+                            controlId="exampleForm.ControlInput1"
+                          >
+                            <Form.Label>Name on Card *</Form.Label>
+                            <Form.Control
+                              type="text"
+                              required
+                              className="card-input common-card-input card-name-input"
+                            />
+                          </Form.Group>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col">
+                          <Form.Label>Card Number *</Form.Label>
+                          <InputGroup className="mb-3">
+                            <FormControl
+                              type="number"
+                              required
+                              className="card-input card-number common-card-input"
+                            />
+                            <InputGroup.Text>
+                              <HiLockClosed />
+                            </InputGroup.Text>
+                          </InputGroup>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col">
+                          <Form.Label>Exp. Date *</Form.Label>
+                          <Form.Select className="common-card-input select-card-input">
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                          </Form.Select>
+                        </div>
+                        <div className="col">
+                          <Form.Label style={{ color: "transparent" }}>
+                            -
+                          </Form.Label>
+                          <Form.Select className="common-card-input select-card-input">
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                          </Form.Select>
+                        </div>
+                        <div className="col">
+                          <Form.Label>Security Code *</Form.Label>
+                          <InputGroup className="mb-3">
+                            <FormControl
+                              type="number"
+                              required
+                              className="card-input security-code common-card-input"
+                            />
+                            <InputGroup.Text>
+                              <HiLockClosed />
+                            </InputGroup.Text>
+                          </InputGroup>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
               <hr className="hr-element" />
             </div>
           </div>
