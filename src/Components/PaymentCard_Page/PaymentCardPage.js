@@ -9,12 +9,14 @@ import MasterCard from "../../assets/payment3.svg";
 import VisaCard from "../../assets/visa.svg";
 import { InputGroup, FormControl, Form } from "react-bootstrap";
 import BagIcon from "../../assets/gift.png";
+import ModalSuccess from "./Modal/ModalSuccess";
 
 const PaymentCard_Page = () => {
   const [isShowForm, setIsShowForm] = useState(true);
   const [isShowNewCardForm, setIsSHowNewCardForm] = useState(false);
+  const [isShowDelSuccessModal, setIsShowDelSuccessModal] = useState(false);
+
   const radioButtonHandler = (e) => {
-    // console.log(e.target.value);
     switch (e.target.value) {
       case "add-new-card":
         setIsSHowNewCardForm(true);
@@ -38,8 +40,16 @@ const PaymentCard_Page = () => {
     }
   };
 
+  const saveDeliveyAddressButtonClickHandler = () => {
+    setIsShowDelSuccessModal(true);
+  };
+
   return (
     <>
+      <ModalSuccess
+        show={isShowDelSuccessModal}
+        onHide={() => setIsShowDelSuccessModal(false)}
+      />
       <div className="staticContainer">
         <div className="static-header-container">
           <div className="static-Title">
@@ -268,34 +278,6 @@ const PaymentCard_Page = () => {
               )}
               <hr className="hr-element" />
             </div>
-            {/* {isShowNewCardForm && (
-              <div className="default-del-address select-payment-card-option">
-                <div className="radio-button-and-default-del-address">
-                  <div className="radio-button-del-container"></div>
-                  <div className="radio-button-and-default-del-address">
-                    <p>My billing address in same as my shipping address</p>
-                    <p>Beatric Waddle 1391 Single Street.</p>
-                    <p>Chicago, MA 02129 USA</p>
-                    <p>+5 781-644-3627</p>
-                    <p>gleen_cross@heraf.com</p>
-                  </div>
-                </div>
-                <div className="radio-button-and-default-del-address">
-                  <div className="radio-button-del-container"></div>
-                  <div className="radio-button-and-default-del-address">
-                    <p>Set as Default</p>
-                  </div>
-                </div>
-                <div className="del-button-container">
-                  <button type="button" className="btn btn-primary">
-                    Cancel
-                  </button>
-                  <button type="button" className="btn btn-primary">
-                    Save
-                  </button>
-                </div>
-              </div>
-            )} */}
             {isShowNewCardForm && (
               <div className="select-payment-card-option-del">
                 <div className="default-del-address">
@@ -338,10 +320,17 @@ const PaymentCard_Page = () => {
                     </div>
                   </div>
                   <div className="del-button-container">
-                    <button type="button" className="btn btn-primary cancel-dl-btn">
+                    <button
+                      type="button"
+                      className="btn btn-primary cancel-dl-btn"
+                    >
                       Cancel
                     </button>
-                    <button type="button" className="btn btn-primary save-dl-btn">
+                    <button
+                      type="button"
+                      className="btn btn-primary save-dl-btn"
+                      onClick={saveDeliveyAddressButtonClickHandler}
+                    >
                       Save
                     </button>
                   </div>
@@ -354,8 +343,7 @@ const PaymentCard_Page = () => {
                 <h4>Gift Cards & Heraf Credits</h4>
               </div>
               <div className="redeem-gift-card">
-                <img src={BagIcon} alt="dfgh" width="3%"
-                height="2%" />
+                <img src={BagIcon} alt="dfgh" width="3%" height="2%" />
                 <h6>Redeem a Gift Card or Heraf Credit</h6>
               </div>
             </div>

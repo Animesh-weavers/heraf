@@ -1,0 +1,27 @@
+.modal-del-access {
+  min-width: 25%;
+  /* border: 1px solid red; */
+}
+.modal-body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.modal-del-access .modal-body-container .del-success-svg-icon {
+  width: 30%;
+}
+.modal-del-access .modal-body-container .del-success-svg-icon img {
+  width: 100%;
+}
+.modal-del-access .modal-body-container .del-success-text {
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.modal-del-access .modal-body-container .del-success-text h4 {
+  font-weight: 300;
+}
