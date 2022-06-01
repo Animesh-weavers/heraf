@@ -241,14 +241,12 @@
   .form-check
   .plus-icon {
   font-size: 22px;
-  /* margin-right: 1.5rem; */
   cursor: pointer;
 }
 .payment-card-container
   .select-payment-card-container
   .select-payment-card-option
   .inputfield-payment-container {
-  /* border: 1px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -259,7 +257,6 @@
   .inputfield-payment-container
   .add-another-card-details {
   width: 60%;
-  /* border: 1px solid black; */
   display: flex;
   align-items: center;
 }
@@ -358,4 +355,133 @@
   .select-card-input {
   border-radius: 8px;
   color: #8d9296;
+}
+.payment-card-container .select-payment-card-container .default-del-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option-del {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option-del
+  .radio-button-and-default-del-address {
+  display: flex;
+  width: 57%;
+  margin-bottom: 1.5rem;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option-del
+  .radio-button-and-default-del-address
+  .radio-button-del-container
+  .r {
+  margin-top: 0rem;
+  margin-right: 1rem;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option-del
+  .radio-button-and-default-del-address
+  .del-address
+  p {
+  margin-bottom: 0rem;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option-del
+  .del-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option-del
+  .del-button-container
+  button {
+  width: 17%;
+  padding: 0.7rem;
+  margin-right: 2rem;
+  border-radius: 27px;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option-del
+  .del-button-container
+  .cancel-dl-btn {
+  background-color: transparent;
+  color: #8d9296;
+  border-color: #8d9296;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option-del
+  .del-button-container
+  .cancel-dl-btn:focus {
+  box-shadow: none;
+  border-color: #8d9296;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option-del
+  .del-button-container
+  .save-dl-btn {
+  background-color: #ee4323;
+  border-color: #ee4323;
+  color: white;
+}
+.payment-card-container
+  .select-payment-card-container
+  .select-payment-card-option-del
+  .del-button-container
+  .save-dl-btn:focus {
+  box-shadow: none;
+  border-color: #ee4323;
+}
+.payment-card-container .select-payment-card-container .gift-card-container {
+  width: 48%;
+}
+.payment-card-container
+  .select-payment-card-container
+  .gift-card-container
+  .redeem-gift-card {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+.payment-card-container
+  .select-payment-card-container
+  .gift-card-container
+  .redeem-gift-card
+  h6 {
+  font-size: 15px;
+}
+.payment-card-container
+  .select-payment-card-container
+  .gift-card-container
+  .redeem-gift-card
+  img {
+  margin-right: 0.5rem;
+  margin-top: 0.1rem;
+}
+.payment-card-container
+  .select-payment-card-container
+  .gift-card-container
+  .h4
+  h4 {
+  color: #8d9296;
+  font-weight: 300;
+  font-size: 25px;
 }

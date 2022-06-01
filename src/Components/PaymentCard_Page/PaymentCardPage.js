@@ -8,12 +8,13 @@ import PaymentMethod from "../Payment_Page/PaymentGateway/PaymentMethod";
 import MasterCard from "../../assets/payment3.svg";
 import VisaCard from "../../assets/visa.svg";
 import { InputGroup, FormControl, Form } from "react-bootstrap";
+import BagIcon from "../../assets/gift.png";
 
 const PaymentCard_Page = () => {
   const [isShowForm, setIsShowForm] = useState(true);
   const [isShowNewCardForm, setIsSHowNewCardForm] = useState(false);
   const radioButtonHandler = (e) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     switch (e.target.value) {
       case "add-new-card":
         setIsSHowNewCardForm(true);
@@ -266,6 +267,97 @@ const PaymentCard_Page = () => {
                 </div>
               )}
               <hr className="hr-element" />
+            </div>
+            {/* {isShowNewCardForm && (
+              <div className="default-del-address select-payment-card-option">
+                <div className="radio-button-and-default-del-address">
+                  <div className="radio-button-del-container"></div>
+                  <div className="radio-button-and-default-del-address">
+                    <p>My billing address in same as my shipping address</p>
+                    <p>Beatric Waddle 1391 Single Street.</p>
+                    <p>Chicago, MA 02129 USA</p>
+                    <p>+5 781-644-3627</p>
+                    <p>gleen_cross@heraf.com</p>
+                  </div>
+                </div>
+                <div className="radio-button-and-default-del-address">
+                  <div className="radio-button-del-container"></div>
+                  <div className="radio-button-and-default-del-address">
+                    <p>Set as Default</p>
+                  </div>
+                </div>
+                <div className="del-button-container">
+                  <button type="button" className="btn btn-primary">
+                    Cancel
+                  </button>
+                  <button type="button" className="btn btn-primary">
+                    Save
+                  </button>
+                </div>
+              </div>
+            )} */}
+            {isShowNewCardForm && (
+              <div className="select-payment-card-option-del">
+                <div className="default-del-address">
+                  <div className="radio-button-and-default-del-address">
+                    <div className="radio-button-del-container">
+                      <div>
+                        <input
+                          className="form-check-input r"
+                          type="radio"
+                          name="radioNoLabel"
+                          id="radioNoLabel1"
+                          value=""
+                          aria-label="..."
+                        />
+                      </div>
+                    </div>
+                    <div className="del-address">
+                      <h6>My billing address in same as my shipping address</h6>
+                      <p>Beatric Waddle 1391 Single Street.</p>
+                      <p>Chicago, MA 02129 USA</p>
+                      <p>+5 781-644-3627</p>
+                      <p>gleen_cross@heraf.com</p>
+                    </div>
+                  </div>
+                  <div className="radio-button-and-default-del-address">
+                    <div className="radio-button-del-container">
+                      <div>
+                        <input
+                          className="form-check-input r"
+                          type="radio"
+                          name="radioNoLabel"
+                          id="radioNoLabel1"
+                          value=""
+                          aria-label="..."
+                        />
+                      </div>
+                    </div>
+                    <div className="del-address">
+                      <h6>Set as Default</h6>
+                    </div>
+                  </div>
+                  <div className="del-button-container">
+                    <button type="button" className="btn btn-primary cancel-dl-btn">
+                      Cancel
+                    </button>
+                    <button type="button" className="btn btn-primary save-dl-btn">
+                      Save
+                    </button>
+                  </div>
+                </div>
+                <hr className="hr-element" />
+              </div>
+            )}
+            <div className="gift-card-container">
+              <div className="h4">
+                <h4>Gift Cards & Heraf Credits</h4>
+              </div>
+              <div className="redeem-gift-card">
+                <img src={BagIcon} alt="dfgh" width="3%"
+                height="2%" />
+                <h6>Redeem a Gift Card or Heraf Credit</h6>
+              </div>
             </div>
           </div>
         </div>
