@@ -5,15 +5,11 @@ import PhoneSvg from "../../assets/phone.svg";
 import EMailSvg from "../../assets/mail.svg";
 import { Form } from "react-bootstrap";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import Select from "react-select";
+import 'react-phone-input-2/lib/style.css'
+import PhoneInput from "react-phone-input-2";
 
 const ContactUsPage = () => {
   const [select, setSelect] = useState("");
-  const [data] = useState([
-    { id: "1", no: "+91" },
-    { id: "2", no: "+57" },
-    { id: "3", no: "+971" },
-  ]);
 
   const handleChange = (e) => {
     setSelect(e.no);
@@ -162,7 +158,8 @@ const ContactUsPage = () => {
                   <Form.Label className="contact-us-label">
                     Mobile Number *
                   </Form.Label>
-                  
+                  <PhoneInput country={"us"} className="contact-us-control" />
+                 
                 </div>
                 <div className="col">
                   <Form.Group

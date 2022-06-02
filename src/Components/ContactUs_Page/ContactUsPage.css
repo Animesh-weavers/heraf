@@ -253,3 +253,120 @@
   .arrow-icon-contact-us {
   font-size: 18px;
 }
+/* .react-tel-input .form-control {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #f5f7f3;
+  color: #787b78;
+} */
+.react-tel-input .form-control {
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #f5f7f3;
+  color: #787b78;
+}
+
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container
+  .form
+  .container
+  .row
+  .col
+  .react-tel-input
+  .form-control {
+  width: 100%;
+  height: 100%;
+  border-left: hidden;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #f5f7f3;
+  border: none;
+}
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container
+  .form
+  .container
+  .row
+  .col
+  .react-tel-input
+  .form-control:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container
+  .form
+  .container
+  .row
+  .col
+  .react-tel-input
+  .flag-dropdown {
+  border-color: transparent;
+  border-radius: 0px;
+  border-left: hidden;
+  background-color: transparent;
+  outline: none;
+}
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container
+  .form
+  .container
+  .row
+  .col
+  .react-tel-input
+  .selected-flag:hover {
+  background-color: #f5f7f3;
+}
+/* .contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container
+  .form
+  .container
+  .row
+  .col
+  .react-tel-input
+  .selected-flag:target {
+  background-color: #f5f7f3;
+} */
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container
+  .form
+  .container
+  .row
+  .col
+  .react-tel-input
+  .flag-dropdown.open
+  .selected-flag {
+  background-color: transparent;
+}
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container
+  .form
+  .container
+  .row
+  .col
+  .react-tel-input
+  .country-list
+  .country {
+  background-color: #f5f7f3;
+}
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container
+  .form
+  .container
+  .row
+  .col
+  .react-tel-input
+  .country-list
+  .country:hover{
+    background-color: #787b7880;
+  }
