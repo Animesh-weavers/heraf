@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContactUsPage.css";
 import WpSvg from "../../assets/whatsapp.svg";
 import PhoneSvg from "../../assets/phone.svg";
 import EMailSvg from "../../assets/mail.svg";
+import { Form } from "react-bootstrap";
+import { AiOutlineArrowRight } from "react-icons/ai";
+import Select from "react-select";
 
 const ContactUsPage = () => {
+  const [select, setSelect] = useState("");
+  const [data] = useState([
+    { id: "1", no: "+91" },
+    { id: "2", no: "+57" },
+    { id: "3", no: "+971" },
+  ]);
+
+  const handleChange = (e) => {
+    setSelect(e.no);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(select);
+  };
+
   return (
     <div className="contactus-full-container">
       {/*stay connected image container */}
@@ -63,6 +82,120 @@ const ContactUsPage = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      {/*contactus-title-form-havequestion-container*/}
+      <div className="contactus-title-form-havequestion-container">
+        <div className="contactus-title">
+          <h1>Send us an E-mail</h1>
+        </div>
+        <div className="contactus-form-container">
+          <Form className="form" onSubmit={handleSubmit}>
+            <div className="container">
+              <div className="row">
+                <div className="col">
+                  <Form.Group
+                    className="mb-3"
+                    controlId="exampleForm.ControlInput1"
+                  >
+                    <Form.Label className="contact-us-label">
+                      Type of Inquiry *
+                    </Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="Select Types"
+                      className="contact-us-control"
+                    />
+                  </Form.Group>
+                </div>
+                <div className="col">
+                  <Form.Group
+                    className="mb-3"
+                    controlId="exampleForm.ControlInput1"
+                  >
+                    <Form.Label className="contact-us-label">
+                      Email address *
+                    </Form.Label>
+                    <Form.Control
+                      type="email"
+                      placeholder="Type email address"
+                      className="contact-us-control"
+                    />
+                  </Form.Group>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <Form.Group
+                    className="mb-3"
+                    controlId="exampleForm.ControlInput1"
+                  >
+                    <Form.Label className="contact-us-label">
+                      First Name *
+                    </Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="First Name"
+                      className="contact-us-control"
+                    />
+                  </Form.Group>
+                </div>
+                <div className="col">
+                  <Form.Group
+                    className="mb-3"
+                    controlId="exampleForm.ControlInput1"
+                  >
+                    <Form.Label className="contact-us-label">
+                      Last Name *
+                    </Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="Last Name"
+                      className="contact-us-control"
+                    />
+                  </Form.Group>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <Form.Label className="contact-us-label">
+                    Mobile Number *
+                  </Form.Label>
+                  
+                </div>
+                <div className="col">
+                  <Form.Group
+                    className="mb-3"
+                    controlId="exampleForm.ControlInput1"
+                  >
+                    <Form.Label className="contact-us-label">
+                      Order ID *
+                    </Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="Type your order id here"
+                      className="contact-us-control"
+                    />
+                  </Form.Group>
+                </div>
+              </div>
+            </div>
+            <div className="submit-contatctus-form-button-container">
+              <button type="submit" className="btn btn-danger">
+                Submit <AiOutlineArrowRight className="arrow-icon-contact-us" />
+              </button>
+            </div>
+          </Form>
+        </div>
+
+        <div className="have-question-container">
+          <h3>Have a question? Well, we've got some answers.</h3>
+          <div className="have-question-btn-container">
+            <button type="button" className="btn btn-danger">
+              Danger
+            </button>
+            Go to Help Center
           </div>
         </div>
       </div>

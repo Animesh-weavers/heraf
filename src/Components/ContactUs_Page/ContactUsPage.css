@@ -128,3 +128,128 @@
   color: #929392;
   font-weight: bold;
 }
+
+/*contactus-title-form-havequestion-container*/
+.contactus-full-container .contactus-title-form-havequestion-container {
+  width: 100%;
+  background-color: #f5f7f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-title {
+  text-align: center;
+  padding: 0.5rem 0rem 1rem 0rem;
+}
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-title
+  h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container
+  .form {
+  /* border: 1px solid blue; */
+  width: 100%;
+  /* text-align: center; */
+  padding: 3rem;
+}
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container
+  .form
+  .container {
+  width: 100%;
+  /* border: 1px solid red; */
+  /* background-color: #929392; */
+}
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container
+  .form
+  .submit-contatctus-form-button-container {
+  /* border: 1px solid blue; */
+  width: 100%;
+  text-align: center;
+}
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container
+  .form
+  .container
+  .row
+  > * {
+  padding-right: 3rem;
+  padding-left: 2rem;
+}
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container
+  .form
+  .container
+  .contact-us-control {
+  background-color: #f5f7f3;
+  border: 2px solid #9ebbc0;
+  border-radius: 30px;
+  padding-left: 1rem;
+  height: 3rem;
+}
+
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container
+  .form
+  .container
+  .contact-us-control:focus {
+  box-shadow: none;
+}
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container
+  .form
+  .container
+  .contact-us-label {
+  color: #787b78;
+}
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container
+  .form
+  .submit-contatctus-form-button-container {
+  /* border: 1px solid black; */
+  padding-top: 1.5rem;
+}
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container
+  .form
+  .submit-contatctus-form-button-container
+  button {
+  width: 13%;
+  padding: 0.7rem;
+  border-radius: 30px;
+  font-size: 17px;
+}
+.contactus-full-container
+  .contactus-title-form-havequestion-container
+  .contactus-form-container
+  .form
+  .submit-contatctus-form-button-container
+  button
+  .arrow-icon-contact-us {
+  font-size: 18px;
+}
