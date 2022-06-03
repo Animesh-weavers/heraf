@@ -9,11 +9,24 @@ import "react-phone-input-2/lib/style.css";
 import PhoneInput from "react-phone-input-2";
 
 const ContactUsPage = () => {
+  const [inquiry, setInquiry] = useState("");
+  const [email, setEmail] = useState("");
+  const [fName, setFname] = useState("");
+  const [lName, setLname] = useState("");
   const [phNo, setPhNo] = useState("");
+  const [orderId, setOrderId] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(phNo);
+    const ContactUsDetailsObj = {
+      inquiry,
+      email,
+      fName,
+      lName,
+      phNo,
+      orderId,
+    };
+    console.log(ContactUsDetailsObj);
   };
 
   return (
@@ -98,6 +111,8 @@ const ContactUsPage = () => {
                       type="text"
                       placeholder="Select Types"
                       className="contact-us-control"
+                      onChange={(e) => setInquiry(e.target.value)}
+                      required
                     />
                   </Form.Group>
                 </div>
@@ -113,6 +128,8 @@ const ContactUsPage = () => {
                       type="email"
                       placeholder="Type email address"
                       className="contact-us-control"
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
                     />
                   </Form.Group>
                 </div>
@@ -130,6 +147,8 @@ const ContactUsPage = () => {
                       type="text"
                       placeholder="First Name"
                       className="contact-us-control"
+                      onChange={(e) => setFname(e.target.value)}
+                      required
                     />
                   </Form.Group>
                 </div>
@@ -145,6 +164,8 @@ const ContactUsPage = () => {
                       type="text"
                       placeholder="Last Name"
                       className="contact-us-control"
+                      onChange={(e) => setLname(e.target.value)}
+                      required
                     />
                   </Form.Group>
                 </div>
@@ -172,6 +193,8 @@ const ContactUsPage = () => {
                       type="text"
                       placeholder="Type your order id here"
                       className="contact-us-control"
+                      onChange={(e) => setOrderId(e.target.value)}
+                      required
                     />
                   </Form.Group>
                 </div>

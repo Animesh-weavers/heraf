@@ -316,8 +316,8 @@
   .row
   .col
   .react-tel-input
-  .selected-flag:hover {
-  background-color: #f5f7f3;
+  .selected-flag {
+  background: transparent !important;
 }
 .contactus-full-container
   .contactus-title-form-havequestion-container
