@@ -22,7 +22,6 @@
   .contactus-heading-types-container
   .contactus-heading {
   text-align: center;
-
   padding-bottom: 2.5rem;
 }
 .contactus-full-container
@@ -67,7 +66,6 @@
   .col
   .contact-type-details {
   float: left;
-
   margin: 0rem 0rem 0rem 2rem;
 }
 .contactus-full-container
@@ -163,9 +161,7 @@
   .contactus-title-form-havequestion-container
   .contactus-form-container
   .form {
-  /* border: 1px solid blue; */
   width: 100%;
-  /* text-align: center; */
   padding: 3rem;
 }
 .contactus-full-container
@@ -174,15 +170,12 @@
   .form
   .container {
   width: 100%;
-  /* border: 1px solid red; */
-  /* background-color: #929392; */
 }
 .contactus-full-container
   .contactus-title-form-havequestion-container
   .contactus-form-container
   .form
   .submit-contatctus-form-button-container {
-  /* border: 1px solid blue; */
   width: 100%;
   text-align: center;
 }
@@ -230,7 +223,6 @@
   .contactus-form-container
   .form
   .submit-contatctus-form-button-container {
-  /* border: 1px solid black; */
   padding-top: 1.5rem;
 }
 .contactus-full-container
@@ -374,7 +366,6 @@
   .contactus-title-form-havequestion-container
   .have-question-container
   .have-question-btn-container {
-  /* border: 1px solid black; */
   text-align: center;
   padding: 1.5rem;
 }
