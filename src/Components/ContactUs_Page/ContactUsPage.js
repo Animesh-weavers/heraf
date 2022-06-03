@@ -5,19 +5,15 @@ import PhoneSvg from "../../assets/phone.svg";
 import EMailSvg from "../../assets/mail.svg";
 import { Form } from "react-bootstrap";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import 'react-phone-input-2/lib/style.css'
+import "react-phone-input-2/lib/style.css";
 import PhoneInput from "react-phone-input-2";
 
 const ContactUsPage = () => {
-  const [select, setSelect] = useState("");
-
-  const handleChange = (e) => {
-    setSelect(e.no);
-  };
+  const [phNo, setPhNo] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(select);
+    console.log(phNo);
   };
 
   return (
@@ -158,8 +154,11 @@ const ContactUsPage = () => {
                   <Form.Label className="contact-us-label">
                     Mobile Number *
                   </Form.Label>
-                  <PhoneInput country={"us"} className="contact-us-control" />
-                 
+                  <PhoneInput
+                    country={"us"}
+                    className="contact-us-control"
+                    onChange={(e) => setPhNo(e)}
+                  />
                 </div>
                 <div className="col">
                   <Form.Group
@@ -190,7 +189,7 @@ const ContactUsPage = () => {
           <h3>Have a question? Well, we've got some answers.</h3>
           <div className="have-question-btn-container">
             <button type="button" className="btn btn-danger">
-              Danger
+              <AiOutlineArrowRight className="arrow-icon-contact-us" />
             </button>
             Go to Help Center
           </div>
