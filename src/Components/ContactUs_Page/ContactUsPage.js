@@ -27,6 +27,14 @@ const ContactUsPage = () => {
       orderId,
     };
     console.log(ContactUsDetailsObj);
+
+    //Reset Form
+    setInquiry("");
+    setEmail("");
+    setFname("");
+    setLname("");
+    setPhNo("");
+    setOrderId("");
   };
 
   return (
@@ -112,6 +120,7 @@ const ContactUsPage = () => {
                       placeholder="Select Types"
                       className="contact-us-control"
                       onChange={(e) => setInquiry(e.target.value)}
+                      value={inquiry}
                       required
                     />
                   </Form.Group>
@@ -129,6 +138,7 @@ const ContactUsPage = () => {
                       placeholder="Type email address"
                       className="contact-us-control"
                       onChange={(e) => setEmail(e.target.value)}
+                      value={email}
                       required
                     />
                   </Form.Group>
@@ -148,6 +158,7 @@ const ContactUsPage = () => {
                       placeholder="First Name"
                       className="contact-us-control"
                       onChange={(e) => setFname(e.target.value)}
+                      value={fName}
                       required
                     />
                   </Form.Group>
@@ -165,6 +176,7 @@ const ContactUsPage = () => {
                       placeholder="Last Name"
                       className="contact-us-control"
                       onChange={(e) => setLname(e.target.value)}
+                      value={lName}
                       required
                     />
                   </Form.Group>
@@ -179,6 +191,7 @@ const ContactUsPage = () => {
                     country={"us"}
                     className="contact-us-control"
                     onChange={(e) => setPhNo(e)}
+                    value={phNo}
                   />
                 </div>
                 <div className="col">
@@ -194,6 +207,7 @@ const ContactUsPage = () => {
                       placeholder="Type your order id here"
                       className="contact-us-control"
                       onChange={(e) => setOrderId(e.target.value)}
+                      value={orderId}
                       required
                     />
                   </Form.Group>
